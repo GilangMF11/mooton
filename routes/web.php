@@ -16,6 +16,14 @@ use Inertia\Inertia;
 |
 */
 
+// #cek hak akses
+// Route::get('admin', function () {
+//     return 'Hai Admin';
+// })->middleware('role:admin');
+// Route::get('user', function () {
+//     return 'Hai user';
+// })->middleware('role:user');
+
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),
